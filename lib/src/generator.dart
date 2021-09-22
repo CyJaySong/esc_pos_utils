@@ -791,13 +791,13 @@ class Generator {
         }
       }
 
-      final hexStr = fromPos.round().toRadixString(16).padLeft(3, '0');
-      final hexPair = HEX.decode(hexStr);
+//      final hexStr = fromPos.round().toRadixString(16).padLeft(3, '0');
+//      final hexPair = HEX.decode(hexStr);
 
       // Position
-      bytes += Uint8List.fromList(
-        List.from(cPos.codeUnits)..addAll([hexPair[1], hexPair[0]]),
-      );
+//      bytes += Uint8List.fromList(
+//        List.from(cPos.codeUnits)..addAll([hexPair[1], hexPair[0]]),
+//      );
     }
 
     bytes += setStyles(styles, isKanji: isKanji);
